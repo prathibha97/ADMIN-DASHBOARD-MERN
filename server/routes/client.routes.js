@@ -1,9 +1,10 @@
 import express from 'express'
-import {getProducts} from '../controllers/client.controller.js'
+import {getProducts, getCustomers} from '../controllers/client.controller.js'
 
 const clientRouter = express.Router()
 
 clientRouter.get(`/products`, getProducts)
+clientRouter.get(`/customers`, getCustomers)
 
 
 export default clientRouter
